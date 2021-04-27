@@ -11,6 +11,9 @@ namespace SystemDynamicsViewer.DataModel
 {
     public class FrMatFileData:INotifyPropertyChanged
     {
+        /// <summary>
+        /// Properties
+        /// </summary>
         private List<double> _timeArray;
         private List<double> _frequencyArray;
         private List<double> _magnitudeArray;

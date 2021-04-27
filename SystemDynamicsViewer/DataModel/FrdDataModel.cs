@@ -20,14 +20,13 @@ namespace SystemDynamicsViewer.DataModel
         private ObservableCollection<FrData> _frdCollection = new ObservableCollection<FrData>();
 
         private ObservableCollection<FrMatFileData> _matDataCollection = new ObservableCollection<FrMatFileData>();
-		
-		// File server path string that must include the path to a given location of test data
-		private string fileServerPath;
-		
+        // Replace argument in FileServer(string arg) with the file server path holding the test data. 
+        private string fileServerPath;
         private FileServer _testFileServer = new FileServer(fileServerPath);
 
-		
-		// Public Properties		
+        /// <summary>
+        /// Properties
+        /// </summary>
         public ObservableCollection<FrMatFileData> MatDataCollection
         {
             get => _matDataCollection;
@@ -90,8 +89,12 @@ namespace SystemDynamicsViewer.DataModel
             SelectedFrdFiles.Clear();
             FrdCollection.Clear();
         }
-		
-		// Function that creates builds up the data information about the data available in the selected file server.
+
+        /// <summary>
+        /// Function building the data information from the given file server path, filtered by the txtSearch string.
+        /// </summary>
+        /// <param name="fileServerPath"></param>
+        /// <param name="txtSearch"></param>
         public void BuildDataModelFileServer(String fileServerPath, string txtSearch)
         {
             ResetCollections();
@@ -145,8 +148,7 @@ namespace SystemDynamicsViewer.DataModel
 
             }
         }
-		
-		// Notify property changed event
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]

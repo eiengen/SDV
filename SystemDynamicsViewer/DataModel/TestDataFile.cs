@@ -17,7 +17,9 @@ namespace SystemDynamicsViewer.DataModel
         private string _type;
         private DateTime _createDate;
         private bool _selected;
-
+        /// <summary>
+        /// Properties
+        /// </summary>
         public bool Selected
         {
             get => _selected;

@@ -1,9 +1,5 @@
 # Introduction 
-It is of interest to have a software application that gives the user the ability of listing measured data depending on certain parameters, like measurement date, system identification, installation configuration, parameter configurations and user defined comments. It should be possible to filter and
-select any data of interest, and then view the results of the selected data. Comparison of the
-measurement data should also be possible. Different types of plots should be possible to select,
-depending on if the data is in frequency domain or time domain.
- 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:

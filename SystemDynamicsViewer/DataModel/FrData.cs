@@ -24,6 +24,9 @@ namespace SystemDynamicsViewer.DataModel
         private double _frequencyStop;
         private double _excitationAmplitude;
 
+        /// <summary>
+        /// Properties
+        /// </summary>
         [Browsable(false)]
         public List<double> PhaseArray
         {

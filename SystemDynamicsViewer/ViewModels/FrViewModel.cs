@@ -58,6 +58,8 @@ namespace SystemDynamicsViewer.ViewModels
         /// </summary>
         public FrViewModel()
         {
+
+
             var frPlotModel = new PlotModel
             {
                 Title = "Frequency response example"

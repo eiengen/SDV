@@ -44,7 +44,7 @@ namespace SystemDynamicsViewer.Views
         {
             InitializeComponent();
         }
-        
+        // button loading the data information from the file server.
         private void BtnGetData_Click(object sender, RoutedEventArgs e)
         {
             if (this.CmbDrive.SelectedValue == null)
@@ -67,7 +67,7 @@ namespace SystemDynamicsViewer.Views
            
             
         }
-
+        // Button that selects the marked data from the search grid
         private void BtnSelectData_Click(object sender, RoutedEventArgs e)
         {
             if (DataGridSearchData.SelectedItems.Count == 0) return;
@@ -114,7 +114,7 @@ namespace SystemDynamicsViewer.Views
 
             e.Column.Header = propertyDescriptor.DisplayName;
         }
-
+        // Shows/updates the frd data details when item is selected from the select grid.
         private void DataGridSelectedData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.FrViewModel.SelectedData = DataGridSelectedData.SelectedIndex;
@@ -128,9 +128,9 @@ namespace SystemDynamicsViewer.Views
                 ExcitationAmplitude = 5.0,
                 FrequencyStart = 1.0,
                 FrequencyStop = 150,
-                SystemId = "EUT1",
-                SystemConfiguration = "Fixed",
-                ProjectId = "P-1000"
+                SystemId = "UUT3",
+                SystemConfiguration = "MOOG_Fixed",
+                ProjectId = "L400"
             });
 
             this.FrViewModel.FrPlotModel.InvalidatePlot(false);
@@ -140,7 +140,7 @@ namespace SystemDynamicsViewer.Views
         {
 
         }
-
+        // Update Selected items in the list, and deselects if it is already selected.
         private void DataGridSearchData_BeginningEdit(object sender, DataGridBeginningEditEventArgs e)
         {
             int selectedIndex = DataGridSearchData.SelectedIndex;

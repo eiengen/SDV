@@ -33,7 +33,7 @@ namespace SystemDynamicsViewer.Views
         public UcFrdView()
         {
             InitializeComponent();
-
+            // Sends viewModel object to SelectData
             SelectData.FrViewModel = _frViewModel;
             // File server path
             SelectData.CmbDrive.ItemsSource = Directory.GetDirectories(_frViewModel.FrdData.TestFileServer.FileServerPath);
