@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="SystemDynamicsViewer.Views.UcTabControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SystemDynamicsViewer.Views"
+             mc:Ignorable="d" d:DesignWidth="1400" Height="827">
+    <Grid>
+        <TabControl x:Name="TabControl" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="810" Width="1400">
+            <TabItem Header="Frequency Data">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0">
+                    <local:UcFrdView Height="Auto"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Time Data">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</UserControl>
